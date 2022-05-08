@@ -256,8 +256,8 @@ p {
 .group-link {
   fill: #212121;
 }
-.group-link:hover .icon-group, 
-.group-link:focus .icon-group {
+.group-link:hover , 
+.group-link:focus  {
   fill: #2196f3;
 }
 .group:last-child {

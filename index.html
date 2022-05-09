@@ -457,9 +457,36 @@
             <use href="./foto\icons\symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p></p>
-      </div>
-    </div>
+        <form class="modal-form">
+         <p class="modal-title">Оставьте свои данные,мы вам перезвоним</p>
+         <div class="modal-field">
+         <label for="name" class="form-label">Имя</label>
+           <input class="form-input" type="text"
+              name="name" id="name" 
+              placeholder="Иван Иванович" autofocus />
+              </div>
+          <div class="modal-field">
+          <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" 
+                id="tel" placeholder="+38(0**)000-00-00"
+                autofocus />
+          <div class="modal-field">
+          <label for="email" class="form-label">Почта</label>
+            <input type="email" name="email" 
+                id="email" placeholder="my@gmail.com"
+                autofocus />
+              </div>
+                <div class="modal-field">
+          <label for="comment" class="form-label">Комментарий</label>
+            <textarea name="comment" id="comment" rows="8" placeholder="Оставте комментарий">
+            </textarea>
+              </div>
+              <input type="checkbox" name="policy" 
+                id="policy"/>
+              <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        </form >
+        <button type="submit">Отправить</button>
+           </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

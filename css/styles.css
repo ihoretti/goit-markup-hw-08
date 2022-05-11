@@ -899,7 +899,7 @@ p {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
-  
+  text-align: center;
   align-items: center;
   justify-content: center;
   margin-top: 0px;

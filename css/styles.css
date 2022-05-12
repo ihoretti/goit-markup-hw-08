@@ -651,7 +651,8 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-title {
+.footer-title ,
+.form-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -694,6 +695,62 @@ p {
 .filter-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-submit,
+.sub-btn {
+  box-sizing: border-box;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin: auto;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-white-txt);
+  background-color: #2196f3;
+  transition: background-color var(--animation);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.sub-btn {
+  display: flexbox;
+  
+}
+
+.btn-submit {
+  display: block;
+}
+
+.subscribe-form input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe-form label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-title {
+  margin-bottom: 15px;
 }
 .tilter .btn {
   font-family: "Roboto", sans-serif;
@@ -910,11 +967,18 @@ p {
   margin-bottom: 10px;
  }
 .modal-field input {
-  box-sizing: border-box;
+  display: block;
+  
   width: 448px;
   height: 40px;
+  
   border: 1px solid rgba(33,33,33,0.2);
   border-radius: 4px;
+  outline: none;
+ }
+ .modal-field input:hover,
+ .modal-field input :focus {
+  border: 1px solid #2196f3 
  }
 .modal-field label {
   font-family: "Roboto", sans-serif;
@@ -944,22 +1008,14 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.btn-submit {
+.form-icon {
+  position: relative;
   display: block;
-  box-sizing: border-box;
-  min-width: 200px;
-  padding: 10px 32px;
-  margin: auto;
-
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: var(--primary-white-txt);
-  background-color: #2196f3;
-  transition: background-color var(--animation);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
-  border-radius: 4px;
+}
+.icon-form {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  fill: var(--main-color);
+  transition: fill var(--animation);
 }

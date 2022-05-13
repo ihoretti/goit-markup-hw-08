@@ -957,8 +957,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
   text-align: center;
-  align-items: center;
-  justify-content: center;
   margin-top: 0px;
 }
 .modal-field {
@@ -968,16 +966,17 @@ p {
  }
 .modal-field input {
   display: block;
-  
+  margin: auto;
   width: 448px;
   height: 40px;
   
+  
   border: 1px solid rgba(33,33,33,0.2);
   border-radius: 4px;
-  outline: none;
+  outline:none;
  }
  .modal-field input:hover,
- .modal-field input :focus {
+ .modal-field input:focus {
   border: 1px solid #2196f3 
  }
 .modal-field label {
@@ -988,6 +987,7 @@ p {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+  
 
   margin-bottom: 4px;
 }
@@ -998,6 +998,7 @@ p {
   height: 120px;
   border: 1px solid rgba(33,33,33,0.2);
   border-radius: 4px;
+  margin: auto;
 }
 .policy-label {
   font-family: "Roboto", sans-serif;

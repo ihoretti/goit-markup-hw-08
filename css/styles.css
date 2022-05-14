@@ -1014,6 +1014,7 @@ p {
   padding: 12px;
   outline: none;
   margin-bottom: 25px;
+  transition: background-color var(--animation);
 }
 .modal-field textarea:hover,
 .modal-field textarea:focus {

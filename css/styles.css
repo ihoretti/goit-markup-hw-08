@@ -942,6 +942,7 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: background-color var(--animation);
   }
   .modal-btn:hover ,
   .modal-icon:hover {
@@ -977,6 +978,7 @@ p {
   border: 1px solid rgba(33,33,33,0.2);
   border-radius: 4px;
   outline: none;
+  transition: background-color var(--animation);
   
  }
  .modal-field input:hover,

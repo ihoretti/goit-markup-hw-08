@@ -509,13 +509,14 @@
               </div>
                 <div class="modal-field">
           <label for="comment" class="form-label">Комментарий</label>
-            <textarea class="textarea" name="comment" id="comment" rows="5" placeholder="Введите текст">
-              Введите текст
+            <textarea class="textarea" name="comment" id="comment" rows="5" placeholder="Введите текст" required>
+              Введите текст 
             </textarea>
               </div>
-              <label  class="checkbox-label">
-                <input class ="checkbox" type="checkbox" />
-                <span class="checkbox-icon">
+              <div class="licence-check">
+              <label  class="checkbox-label" for="licence" name="licence">
+                <input class ="checkbox" type="checkbox" name="licence" id="licence" />
+                <span class="checkbox-icon" role="checkbox-icon">
                   <svg class="icon-check" width="11" height="8">
                     <use href="./foto\icons\icons.svg#icon-Vector"></use>
                   </svg>
@@ -524,6 +525,7 @@
                   <a class="licence-link" href="">Условия договора</a> 
                 </span>
               </label>
+              </div>
               <button type="submit" class="btn-submit">Отправить</button>
         </form >
       <script src="./js/modal.js"></script>

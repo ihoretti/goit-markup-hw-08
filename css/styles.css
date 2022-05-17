@@ -718,14 +718,13 @@ p {
   border-color: #2196f3;
 }
 
-.sub-btn {
-  display:flexbox ;
-}
+
 .btn-submit {
   display: block;
 }
 .sub-icon {
   fill:  #fff;
+  margin-left: 10px;
 }
 
 .subscribe-form input {
@@ -739,7 +738,11 @@ p {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
+}
+.subscribe-form{
+  display: flex;
+  align-items: center;
 }
 
 .subscribe-form label {
@@ -750,6 +753,8 @@ p {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  margin-right: 12px;
 }
 
 .form-title {
@@ -928,12 +933,13 @@ p {
 }
 .modal-wrapper {
   position: absolute;
+
   width: 530px;
   height: 580px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
 }
@@ -941,6 +947,8 @@ p {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -961,7 +969,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
   text-align: center;
-  margin-top: 10px;
+  
   margin-bottom: 12px;
 }
 .textarea {
@@ -990,8 +998,7 @@ p {
   border-radius: 4px;
   outline: none;
   transition: background-color var(--animation);
-  
- }
+}
  .modal-field input:hover,
  .modal-field input:focus {
   border: 1px solid #2196f3 
@@ -1009,12 +1016,11 @@ p {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
-  
-
   margin-bottom: 4px;
-  margin-left: 20px;
+  
 }
 .modal-field textarea {
+  display: block;
   resize: none;
   box-sizing: border-box;
   width: 448px;
@@ -1022,9 +1028,9 @@ p {
   border: 1px solid rgba(33,33,33,0.2);
   border-radius: 4px;
   margin: auto;
-  padding: 12px;
+  padding: 12px 16px;
   outline: none;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   transition: background-color var(--animation);
 }
 .modal-field textarea:hover,
@@ -1039,7 +1045,6 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 34px;
 }
 .licence-check {
   position: relative;
@@ -1055,7 +1060,7 @@ p {
 .icon-form {
   position: absolute;
   top: 14px;
-  left: 40px;
+  left: 12px;
   fill: var(--main-color);
   transition: fill var(--animation);
 }
@@ -1077,8 +1082,8 @@ p {
 }
 .icon-check {
   position: absolute;
-  top: 30%;
-  left: 13%;
+  top: 35%;
+  left: 5.5%;
   transform: translate(-50%, -50%);
   fill: white;
   background-size: contain;

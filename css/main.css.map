@@ -3,7 +3,9 @@
     "mappings": "",
     "sources": [
         "../sass/main.scss",
-        "../sass/_variables.scss"
+        "../sass/utils/_variables.scss",
+        "../sass/base/_normalize.scss",
+        "../sass/components/_page-header.scss"
     ],
     "names": [],
     "file": "main.css"

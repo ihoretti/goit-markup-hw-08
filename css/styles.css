@@ -53,8 +53,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.header,
-.header-box {
+.header {
   display: flex;
   margin-left: auto;
   margin-right: 0px;
@@ -64,7 +63,7 @@ a {
 .box {
   border-bottom: 1px solid #ececec;
 }
-.nav-container > .list {
+.nav > .list {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -74,14 +73,14 @@ a {
   display: flex;
   margin-left: auto;
 }
-.list > .nav-item:not(:last-child) {
+.list > .nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .connection {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header .header-logo {
+.header .header__logo {
   align-items: center;
   margin-right: 93px;
 
@@ -92,10 +91,10 @@ a {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.header-logo .span-logo {
+.header__logo .span-logo {
   color: #2196f3;
 }
-.nav-link {
+.nav__link {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -104,16 +103,7 @@ a {
   color: var(--primary-dark-txt);
   transition: color var(--animation);
 }
-.link-porto {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-.link-porto:hover,
-.link-porto:focus {
-  color: #2196f3;
-}
-.nav-item .nav-link {
+.nav__item .nav__link {
   position: relative;
   width: 49px;
   height: 16px;
@@ -121,8 +111,8 @@ a {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav-item .nav-link:hover,
-.nav-item .nav-link:focus {
+.nav__item .nav__link:hover,
+.nav__item .nav__link:focus {
   color:#2196f3;
 }
 .current::after {
@@ -136,7 +126,7 @@ bottom: -32px;
 left: 0px;
 position:absolute ;
 }
-.header-link-email {
+.header__link-email {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -147,11 +137,9 @@ position:absolute ;
   color: #757575;
   transition: color var(--animation);
 }
-.header-item-tel {
-  margin-left: 30px;
-}
-.header-link-email:hover,
-.header-link-email:focus {
+
+.header__link-email:hover,
+.header__link-email:focus {
   color:#2196f3;
 }
 .connection .list {
@@ -172,7 +160,7 @@ position:absolute ;
 .icon-tel:focus {
   fill: #2196f3; 
 }
-.header-item-tel .header-link-tel {
+.header__item-tel .header__link-tel {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -183,8 +171,11 @@ position:absolute ;
   color: #757575;
   transition: color var(--animation);
 }
- .header-link-tel:hover, 
- .header-link-tel:focus {
+.header__item-tel {
+  margin-left: 30px;
+}
+ .header__link-tel:hover, 
+ .header__link-tel:focus {
   color: #2196f3 
 }
 .fono {

@@ -42,7 +42,11 @@ html {
 a {
   text-decoration: none;
 }
-.header-container {
+.container .list {
+  display: flex;
+  margin-left: auto;
+}
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -63,27 +67,7 @@ a {
 .box {
   border-bottom: 1px solid #ececec;
 }
-.nav > .list {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.container > .list {
-  display: flex;
-  margin-left: auto;
-}
-.list > .nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.connection {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.header .header__logo {
-  align-items: center;
-  margin-right: 93px;
-
+.logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -91,10 +75,31 @@ a {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.header__logo .span-logo {
+.header__logo {
+  align-items: center;
+  margin-right: 93px;
+}
+.header__logo--span-logo {
   color: #2196f3;
 }
-.nav__link {
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: auto;
+  list-style-type: none;
+}
+
+.list-connection {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+.nav-list__nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-list__nav-link {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -103,7 +108,7 @@ a {
   color: var(--primary-dark-txt);
   transition: color var(--animation);
 }
-.nav__item .nav__link {
+.nav-list__nav-link {
   position: relative;
   width: 49px;
   height: 16px;
@@ -111,11 +116,11 @@ a {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav__item .nav__link:hover,
-.nav__item .nav__link:focus {
+.nav-list__nav-item .nav-list__nav-link:hover,
+.nav-list__nav-item .nav-list__nav-link:focus {
   color: #2196f3;
 }
-.current::after {
+.nav-list--current::after {
   display: block;
   content: "";
   width: 100%;
@@ -141,11 +146,6 @@ a {
 .header__link-email:hover,
 .header__link-email:focus {
   color: #2196f3;
-}
-.connection .list {
-  display: flex;
-  align-items: center;
-  width: 307px;
 }
 .icon-email,
 .icon-tel {

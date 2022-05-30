@@ -604,8 +604,8 @@ p {
   transition: color var(--animation),
   background-color var(--animation);
 }
-.footer-links--links-social :hover,
-.footer-links--links-social :focus {
+.footer-links--item-social :hover,
+.footer-links--item-social :focus {
   background-color:#2196f3 ;
 }
 .footer-links--links-social :last-child {

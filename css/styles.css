@@ -721,21 +721,6 @@ p {
   list-style-type: none;
   color: var(--primary-dark-txt);
 }
-.list .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.list .descr {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-dark-txt);
-}
 .test-container {
   display: flex;
   width: 1200px;
@@ -767,7 +752,6 @@ p {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 2px 6px rgba(0, 0, 0, 0.16);
 }
-
 .signa {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -777,7 +761,34 @@ p {
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
 }
-
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-dark-txt);
+}
+.signa__title {
+  min-width: 322px;
+  right: 36px;
+  padding-bottom: 4px;
+  margin-bottom: auto;
+  text-align: left;
+}
+.descr {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-dark-txt);
+}
+.signa__descr {
+  min-width: 322px;
+  right: 30px;
+  padding-top: 0px;
+}
 .overlay {
   position: relative;
   overflow: hidden;
@@ -810,20 +821,6 @@ p {
 .flex-element:hover .overlay-txt {
   transform: translateY(0);
 }
-.title {
-  min-width: 322px;
-  right: 36px;
-  padding-bottom: 4px;
-  color: #212121;
-  margin-bottom: auto;
-  text-align: left;
-}
-.descr {
-  min-width: 322px;
-  right: 30px;
-  padding-top: 0px;
-}
-
 .backdrop {
   position: fixed;
   width: 100vw;

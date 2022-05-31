@@ -309,7 +309,6 @@ p {
 .section-team {
   background-color: #f5f4fa;
 }
-
 .container__different {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -885,7 +884,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
   text-align: center;
-
+}
+.modal-form__modal-title {
   margin-bottom: 12px;
 }
 .textarea {
@@ -903,7 +903,7 @@ p {
   margin-bottom: 10px;
 }
 
-.modal-field input {
+.form-input {
   display: block;
   margin: auto;
   width: 448px;
@@ -915,16 +915,15 @@ p {
   outline: none;
   transition: background-color var(--animation);
 }
-.modal-field input:hover,
-.modal-field input:focus {
+.modal-field__form-input:hover,
+.modal-field__form-input:focus {
   border: 1px solid #2196f3;
 }
-.modal-field input:hover ~ .icon-form,
-.modal-field input:focus ~ .icon-form {
+.modal-field__form-input:hover ~ .icon-form,
+.modal-field__form-input:focus ~ .icon-form {
   fill: #2196f3;
 }
-
-.modal-field label {
+.form-label {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -932,9 +931,22 @@ p {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+}
+.modal-field__form-label {
   margin-bottom: 4px;
 }
-.modal-field textarea {
+.form-icon {
+  position: relative;
+  display: block;
+}
+.icon-form {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  fill: var(--main-color);
+  transition: fill var(--animation);
+}
+.textarea {
   display: block;
   resize: none;
   box-sizing: border-box;
@@ -945,12 +957,14 @@ p {
   margin: auto;
   padding: 12px 16px;
   outline: none;
+}
+.modal-field__textarea:hover,
+.modal-field__textarea:focus {
+  border: 1px solid #2196f3;
+}
+.modal-field__textarea {
   margin-bottom: 20px;
   transition: background-color var(--animation);
-}
-.modal-field textarea:hover,
-.modal-field textarea:focus {
-  border: 1px solid #2196f3;
 }
 .checkbox-label {
   font-family: "Roboto", sans-serif;
@@ -967,17 +981,6 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-.form-icon {
-  position: relative;
-  display: block;
-}
-.icon-form {
-  position: absolute;
-  top: 14px;
-  left: 12px;
-  fill: var(--main-color);
-  transition: fill var(--animation);
 }
 .checkbox {
   appearance: none;

@@ -619,10 +619,37 @@ p {
   align-items: center;
   fill: #ffffff;
 }
-.filter-button:hover,
-.filter-button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.subscribe {
+  margin-left: auto;
+}
+.subscribe__title {
+  margin-bottom: 15px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+.sub-label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+}
+.sub-label__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
+}
+.btn-submit {
+  display: block;
 }
 .btn-submit,
 .sub-btn {
@@ -645,47 +672,11 @@ p {
   border-color: #2196f3;
 }
 
-.btn-submit {
-  display: block;
-}
-.sub-icon {
-  fill: #fff;
+.sub-btn__sub-icon {
+  fill: #ffffff;
   margin-left: 10px;
 }
 
-.subscribe-form input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
-}
-
-.subscribe {
-  margin-left: auto;
-}
-.subscribe-form {
-  display: flex;
-  align-items: center;
-}
-
-.subscribe-form label {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
-  margin-right: 12px;
-}
-
-.subscribe__title {
-  margin-bottom: 15px;
-}
 .tilter .btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -694,6 +685,11 @@ p {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
+}
+.filter-button:hover,
+.filter-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list .title {
   font-family: "Roboto", sans-serif;

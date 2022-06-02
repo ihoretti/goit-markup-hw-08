@@ -1,6 +1,7 @@
-//variables//
+//variables
 @import "./utils/variables";
-//base styles//
+//base styles
 @import "./base/base";
-@import "./components/page-header";
-@import "./components/components";
+//components
+@import "./components/container;
+@import " ./components/btn;

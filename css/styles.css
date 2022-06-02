@@ -1,50 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.list {
-  list-style: none;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-a {
-  text-decoration: none;
-}
-.container .list {
-  display: flex;
-  margin-left: auto;
-}
-.header__container {
-  display: flex;
-  align-items: center;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header {
-  display: flex;
-  margin-left: auto;
-  margin-right: 0px;
-  align-items: center;
-  justify-content: space-between;
-}
 .box {
   border-bottom: 1px solid #ececec;
 }
@@ -176,13 +129,7 @@ a {
   margin-left: auto;
   text-align: center;
 }
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
+
 .fono {
   height: 600px;
   padding-top: 200px;

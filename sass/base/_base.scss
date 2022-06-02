@@ -1,0 +1,43 @@
+@import "./reset";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.list {
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+a {
+  text-decoration: none;
+}
+.container .list {
+  display: flex;
+  margin-left: auto;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: space-between;
+}

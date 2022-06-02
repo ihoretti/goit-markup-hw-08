@@ -1,13 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": ";ACAA,AAAA,KAAK,CAAC;EACF,mBAAmB;EACnB,WAAW,CAAA,SAAC;EACZ,aAAa,CAAA,UAAC;EACd,aAAa,CAAA,UAAC;EACd,uBAAuB;EACvB,mBAAmB,CAAA,QAAC;EACpB,qBAAqB,CAAA,QAAC;EACtB,sBAAsB;EACtB,kBAAkB,CAAA,QAAC;EACnB,oBAAoB,CAAA,QAAC;EACrB,qBAAqB;EACrB,iBAAiB,CAAA,QAAC;EAClB,eAAe,CAAA,QAAC;EAChB,qBAAqB;EACrB,iBAAiB,CAAA,QAAC;EAElB,WAAW,CAAA,mCAAC;CACf",
     "sources": [
         "../sass/main.scss",
-        "../sass/utils/_utils.scss",
+        "../sass/utils/_variables.scss",
         "../sass/base/_normalize.scss",
         "../sass/components/_page-header.scss",
-        "../sass/components/_components.scss",
-        "../sass/variables/_variables.scss"
+        "../sass/components/_components.scss"
     ],
     "names": [],
     "file": "main.css"

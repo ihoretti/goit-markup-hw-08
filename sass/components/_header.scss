@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.header__logo {
+  align-items: center;
+  margin-right: 93px;
+}
+.header__logo--span-logo {
+  color: #2196f3;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: auto;
+  list-style-type: none;
+}
+.list-connection {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+.nav-list__nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-list__nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-txt);
+  transition: color var(--animation);
+}
+.nav-list__nav-link {
+  position: relative;
+  width: 49px;
+  height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav-list__nav-item .nav-list__nav-link:hover,
+.nav-list__nav-item .nav-list__nav-link:focus {
+  color: #2196f3;
+}
+.nav-list--current::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  bottom: -32px;
+  left: 0px;
+  position: absolute;
+}
+.header__link-email {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color var(--animation);
+}
+.header__link-email:hover,
+.header__link-email:focus {
+  color: #2196f3;
+}
+.icon-email,
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-email:hover,
+.icon-email:focus {
+  fill: #2196f3;
+}
+.icon-tel:hover,
+.icon-tel:focus {
+  fill: #2196f3;
+}
+.header__item-tel .header__link-tel {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color var(--animation);
+}
+.header__item-tel {
+  margin-left: 30px;
+}
+.header__link-tel:hover,
+.header__link-tel:focus {
+  color: #2196f3;
+}

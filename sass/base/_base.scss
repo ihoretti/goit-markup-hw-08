@@ -1,1 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 
+.box {
+  border-bottom: 1px solid #ececec;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.list {
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+a {
+  text-decoration: none;
+}
+
+.btn-submit {
+  display: block;
+}

@@ -1,1 +1,47 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .list {
+  display: flex;
+  margin-left: auto;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.container__hang {
+  display: flex;
+  margin: auto;
+}
 
+.container-btn {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  display: block;
+  padding: 0px;
+}

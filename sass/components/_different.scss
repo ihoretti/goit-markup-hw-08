@@ -1,19 +1,20 @@
-.section-different,
+.section,
 .section-team {
+  display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.container__different {
+.works {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 94px;
 }
-.container__different > .list__item {
+.works__item {
   display: flex;
   width: 370px;
   margin-right: 30px;
 }
-.container__different > .list__item:last-child {
+.works__item:last-child {
   margin-right: 0px;
 }

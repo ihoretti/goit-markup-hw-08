@@ -414,8 +414,7 @@ a {
   margin-right: 0px;
 }
 
-.section,
-.section-team {
+.section {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;

@@ -1,4 +1,4 @@
-.section-team {
+.section--azurebg {
   background-color: #f5f4fa;
 }
 .section__title {
@@ -12,7 +12,6 @@
   margin-bottom: 50px;
   text-align: center;
 }
-.container__title-team,
 .clients__title {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
@@ -22,11 +21,7 @@
   color: var(--primary-dark-txt);
 }
 
-.container__title-team {
-  margin-bottom: 50px;
-  text-align: center;
-}
-.list__item-team {
+.team__item {
   list-style-type: none;
   width: 270px;
   margin-right: 30px;
@@ -35,27 +30,18 @@
   border-radius: 0px 0px 4px 0px;
   background-color: #ffffff;
 }
-.presentation {
+.team__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.presentation__title-foto {
+.team__title {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
-}
-.presentation__descr-foto {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--secondary-dark-txt);
-}
-.presentation__title-foto {
+
   min-width: 151px;
   right: 19px;
   padding-bottom: 10px;
@@ -63,7 +49,14 @@
   margin-right: auto;
   text-align: center;
 }
-.presentation__descr-foto {
+.team__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-dark-txt);
+
   min-width: 130px;
   right: 19px;
   padding-top: 0px;
@@ -71,7 +64,9 @@
   margin-right: auto;
   text-align: center;
 }
-.presentation__list-social {
+
+/* Социальные сети */
+.social {
   display: flex;
   list-style: none;
   padding: 0px;
@@ -80,7 +75,7 @@
   justify-content: center;
   align-items: center;
 }
-.list-social__link-social,
+.social__link,
 .footer-links--links-social {
   display: flex;
   justify-content: center;
@@ -92,25 +87,25 @@
   transition: color var(--animation), background-color var(--animation);
 }
 
-.list-social__link-social {
+.social__link {
   background-color: #ffffff;
   color: #afb1b8;
 }
-.list-social__item-social {
+.social__item {
   margin-right: 10px;
 }
-.list-social__item-social:last-child {
+.social__item:last-child {
   margin-right: 0px;
 }
-.list-social__link-social:hover,
-.list-social__link-social:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: #2196f3;
 }
-.list-social__link-social:hover .list-social__icon-social,
-.list-social__link-social:focus .list-social__icon-social {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: #ffffff;
 }
-.list-social__icon-social {
+.social__icon {
   justify-content: center;
   align-items: center;
   fill: currentColor;

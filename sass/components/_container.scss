@@ -1,23 +1,19 @@
 .container {
+  flex-direction: column;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container .list {
-  display: flex;
-  margin-left: auto;
+  margin: auto;
+  align-items: center;
 }
 .header__container {
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
   align-items: center;
 }
-.container__hang {
-  display: flex;
-  margin: auto;
-}
-
 .container-btn {
   display: flex;
   width: 1200px;
@@ -32,7 +28,6 @@
   display: flex;
   justify-content: center;
 }
-
 .container-footer {
   display: flex;
   width: 1200px;

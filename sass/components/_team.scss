@@ -1,7 +1,17 @@
 .section-team {
   background-color: #f5f4fa;
 }
-.container__title,
+.section__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-dark-txt);
+
+  margin-bottom: 50px;
+  text-align: center;
+}
 .container__title-team,
 .clients__title {
   font-family: "Roboto", sans-serif;
@@ -11,7 +21,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
 }
-.container__title,
+
 .container__title-team {
   margin-bottom: 50px;
   text-align: center;

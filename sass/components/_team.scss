@@ -9,6 +9,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 0px;
   background-color: #ffffff;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 .team__box {
   padding-top: 30px;

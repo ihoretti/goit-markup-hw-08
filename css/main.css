@@ -466,6 +466,10 @@ a {
   background-color: #ffffff;
 }
 
+.team__item:last-child {
+  margin-right: 0px;
+}
+
 .team__box {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -580,8 +584,7 @@ a {
 .clients {
   display: flex;
   list-style-type: none;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -590,14 +593,8 @@ a {
   margin-right: 30px;
 }
 
-.clients__item :last-child {
+.clients__item:last-child {
   margin-right: 0px;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  color: #2196f3;
-  border-color: #2196f3;
 }
 
 .clients__link {
@@ -611,6 +608,11 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
   transition: color var(--animation);
+}
+
+.clients__link:hover, .clients__link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .clients__icon {

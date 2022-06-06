@@ -1,3 +1,9 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--primary-dark-bg);
+}
+
 .footer__link {
   display: block;
   margin-bottom: 20px;
@@ -14,12 +20,8 @@
 .footer--span-logo {
   color: #2196f3;
 }
-.footer {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  background-color: var(--primary-dark-bg);
-}
-.list__adr-link {
+/* Адрес */
+.address__link {
   display: block;
   min-width: 231px;
   padding-bottom: 9px;
@@ -32,7 +34,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-white-txt);
 }
-.list__link-email {
+.address__email {
   display: block;
   min-width: 231px;
   padding-bottom: 9px;
@@ -45,7 +47,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.list__link-tel {
+.address__tel {
   display: block;
   min-width: 231px;
 
@@ -57,8 +59,8 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-links__title,
-.subscribe__title {
+/* Социальные сети футера */
+.join__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -67,8 +69,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  margin-bottom: 20px;
 }
-.footer-links {
+.join {
   display: inline;
   text-align: center;
   min-width: 145px;
@@ -79,23 +83,23 @@
   display: flex;
   list-style-type: none;
 }
-.footer-links--item-social {
+.join__social--item {
   margin-right: 10px;
 }
-.footer-links--links-social {
+.join__social--link {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   cursor: pointer;
   transition: color var(--animation), background-color var(--animation);
 }
-.footer-links--item-social :hover,
-.footer-links--item-social :focus {
+.join__social--item :hover,
+.join__social--item :focus {
   background-color: #2196f3;
 }
-.footer-links--item-social :last-child {
+.join__social--item:last-child {
   margin-right: 0px;
 }
-.list-social__icon-footer {
+.join__social--icon {
   display: flex;
   background-position: center;
   justify-content: center;
@@ -104,9 +108,6 @@
 }
 .subscribe {
   margin-left: auto;
-}
-.subscribe__title {
-  margin-bottom: 15px;
 }
 .subscribe-form {
   display: flex;

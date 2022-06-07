@@ -117,12 +117,8 @@ a {
   margin-right: auto;
 }
 
-.btn-list {
-  display: flex;
-  justify-content: center;
-}
-
-.container-footer {
+.container-footer,
+.test-container {
   display: flex;
   width: 1200px;
   padding-left: 15px;
@@ -134,6 +130,11 @@ a {
 .list {
   display: block;
   padding: 0px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -764,15 +765,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
-}
-
-.test-container {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .flex-container {

@@ -14,10 +14,12 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 .box {
   border-bottom: 1px solid #ececec;
 }
-
 .body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -46,14 +48,15 @@ p {
   margin-bottom: 50px;
   text-align: center;
 }
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features {
   list-style: none;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 .btn-submit {

@@ -15,12 +15,12 @@
   background-color: #2196f3;
   border-color: #2196f3;
   transition: background-color var(--animation);
-}
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: #188ce8;
-}
 
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
 .btn-submit,
 .sub-btn {
   box-sizing: border-box;

@@ -712,6 +712,7 @@ a {
 
 .join__social--item:hover, .join__social--item:focus {
   background-color: #2196f3;
+  border-radius: 50%;
 }
 
 .join__social--item:last-child {

@@ -355,6 +355,7 @@ a {
   border-radius: 4px;
 }
 
+/* Закрытие модального окна */
 .modal-btn {
   position: absolute;
   top: 8px;

@@ -286,8 +286,7 @@ a {
   transition: background-color var(--animation);
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 

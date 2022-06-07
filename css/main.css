@@ -627,17 +627,14 @@ a {
 }
 
 .footer__link {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer__link {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer--span-logo {
@@ -684,6 +681,14 @@ a {
 }
 
 /* Социальные сети футера */
+.join {
+  display: inline;
+  text-align: center;
+  min-width: 145px;
+  padding-bottom: 0px;
+  margin-left: 70px;
+}
+
 .join__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -696,14 +701,6 @@ a {
   margin-bottom: 20px;
 }
 
-.join {
-  display: inline;
-  text-align: center;
-  min-width: 145px;
-  padding-bottom: 0px;
-  margin-left: 70px;
-}
-
 .list-social {
   display: flex;
   list-style-type: none;
@@ -713,20 +710,19 @@ a {
   margin-right: 10px;
 }
 
-.join__social--link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  cursor: pointer;
-  transition: color var(--animation), background-color var(--animation);
-}
-
-.join__social--item :hover,
-.join__social--item :focus {
+.join__social--item:hover, .join__social--item:focus {
   background-color: #2196f3;
 }
 
 .join__social--item:last-child {
   margin-right: 0px;
+}
+
+.join__social--link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .join__social--icon {

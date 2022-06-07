@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
 }
+/* Логотип */
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -20,6 +21,7 @@
 .header__logo--span-logo {
   color: #2196f3;
 }
+/*Навигация */
 .site-nav {
   display: flex;
   align-items: center;
@@ -63,6 +65,7 @@
   left: 0px;
   position: absolute;
 }
+/* Контакты */
 .contacts {
   display: flex;
   margin-left: auto;

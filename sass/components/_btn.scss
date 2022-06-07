@@ -45,33 +45,8 @@
   fill: #ffffff;
   margin-left: 10px;
 }
-.filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.filter__button {
-  display: flex;
-  box-sizing: 0px;
-  padding: 6px 22px;
-  margin-right: 8px;
-  border: transparent;
-  cursor: pointer;
-  transition: color var(--animation), background-color var(--animation);
-}
-.filter__button:hover,
-.filter__button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.filter__button:not(:last-child) {
-  display: flex;
-  margin-right: 8px;
-  text-align: center;
-}
+/* Кнопки портфолио */
 .btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -81,6 +56,30 @@
   letter-spacing: 0.03em;
   list-style-type: none;
   color: var(--primary-dark-txt);
+}
+.filter__button {
+  display: flex;
+  box-sizing: 0px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  border: transparent;
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
+
+  &:not(:last-child) {
+    display: flex;
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .modal-btn {

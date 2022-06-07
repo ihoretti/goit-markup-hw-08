@@ -5,17 +5,15 @@
 }
 
 .footer__link {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer__link {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  display: block;
+  margin-bottom: 20px;
 }
 .footer--span-logo {
   color: #2196f3;
@@ -60,6 +58,13 @@
   color: rgba(255, 255, 255, 0.6);
 }
 /* Социальные сети футера */
+.join {
+  display: inline;
+  text-align: center;
+  min-width: 145px;
+  padding-bottom: 0px;
+  margin-left: 70px;
+}
 .join__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -72,19 +77,20 @@
 
   margin-bottom: 20px;
 }
-.join {
-  display: inline;
-  text-align: center;
-  min-width: 145px;
-  padding-bottom: 0px;
-  margin-left: 70px;
-}
 .list-social {
   display: flex;
   list-style-type: none;
 }
 .join__social--item {
   margin-right: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 .join__social--link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -92,13 +98,7 @@
   cursor: pointer;
   transition: color var(--animation), background-color var(--animation);
 }
-.join__social--item :hover,
-.join__social--item :focus {
-  background-color: #2196f3;
-}
-.join__social--item:last-child {
-  margin-right: 0px;
-}
+
 .join__social--icon {
   display: flex;
   background-position: center;

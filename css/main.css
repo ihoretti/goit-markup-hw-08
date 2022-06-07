@@ -537,6 +537,10 @@ a {
   color: #afb1b8;
 }
 
+.social__link:hover, .social__link:focus {
+  background-color: #2196f3;
+}
+
 .social__item {
   margin-right: 10px;
 }
@@ -545,20 +549,15 @@ a {
   margin-right: 0px;
 }
 
-.social__link:hover,
-.social__link:focus {
-  background-color: #2196f3;
+.social__icon {
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
   fill: #ffffff;
-}
-
-.social__icon {
-  justify-content: center;
-  align-items: center;
-  fill: currentColor;
 }
 
 .works__box {

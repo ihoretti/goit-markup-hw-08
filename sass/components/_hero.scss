@@ -1,5 +1,12 @@
 .hero {
-  height: 600px;
+  @include mg(mobail) {
+    width: 480px;
+    height: 400px;
+  }
+  @include mg(tablet) {
+    max-width: 768px;
+    height: 400px;
+  }
   // mobail tablet screen
   @include mg(not-desktop) {
     padding-top: 118px;
@@ -12,7 +19,8 @@
   }
 
   max-width: 1600px;
-  margin: 0 auto;
+  height: 600px;
+  margin: auto;
   background-color: var(--primary-dark-bg);
   background-image: url(../foto/overlay.jpg);
   background-image: linear-gradient(
@@ -37,4 +45,8 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
+  @include mg(not-desktop) {
+    max-width: 360px;
+  }
 }

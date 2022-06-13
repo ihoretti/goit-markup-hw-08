@@ -1,6 +1,5 @@
 .hero {
   height: 600px;
-
   // mobail tablet screen
   @include mg(not-desktop) {
     padding-top: 118px;

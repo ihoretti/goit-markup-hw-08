@@ -39,11 +39,13 @@ a {
     width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0px;
   }
   @include mq(tablet) {
     width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0px;
   }
   @include mq(desktop) {
     width: 1200px;

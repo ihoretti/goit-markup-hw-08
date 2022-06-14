@@ -1,21 +1,8 @@
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
   align-items: center;
-  // mobile screen from 480px
-  @media screen and(min-width : 480px) {
-    width: 480px;
-  }
-  // tablet screen
-  @media screen and(min-width : 768px) {
-    width: 768px;
-  }
-  // desktop screen
-  @media screen and(min-width : 1200px) {
-    width: 1200px;
-  }
 }
 .header__container {
   display: flex;
@@ -35,9 +22,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .container-footer,
-.container-section,
 .test-container {
   display: flex;
   width: 1200px;

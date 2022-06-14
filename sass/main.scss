@@ -1,5 +1,7 @@
 //variables
 @import "./variables/variables";
+// mixins
+@import "./utils/mixins";
 //base styles
 @import "./base/base";
 //components container
@@ -25,5 +27,3 @@
 @import "./components/portfolio";
 //modal-window
 @import "./components/modal-window";
-// mixins
-@import "./utils/mixins";

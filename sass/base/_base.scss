@@ -17,6 +17,7 @@ p {
 a {
   text-decoration: none;
 }
+
 .box {
   border-bottom: 1px solid #ececec;
 }
@@ -29,40 +30,25 @@ a {
   color: #757575;
 }
 .section {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-
-  @include mq(mobile) {
-    width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0px;
-  }
-  @include mq(tablet) {
-    width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0px;
-  }
-  @include mq(desktop) {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .section__title {
   font-family: "Roboto", sans-serif;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
 
   margin-bottom: 50px;
-  text-align: center;
 }
 .filter {
   padding-top: 94px;

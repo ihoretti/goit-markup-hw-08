@@ -1,19 +1,19 @@
 .hero {
-  @include mg(mobail) {
+  @include mq(mobail) {
     width: 480px;
     height: 400px;
   }
-  @include mg(tablet) {
+  @include mq(tablet) {
     max-width: 768px;
     height: 400px;
   }
   // mobail tablet screen
-  @include mg(not-desktop) {
+  @include mq(not-desktop) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
   // desktop screen
-  @include mg(desktop) {
+  @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -46,7 +46,7 @@
   margin-left: auto;
   text-align: center;
 
-  @include mg(not-desktop) {
+  @include mq(not-desktop) {
     max-width: 360px;
   }
 }

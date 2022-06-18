@@ -73,16 +73,20 @@ a {
   }
 }
 .section__title {
+  display: block;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 36px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
 
-  margin-bottom: 50px;
+  @include mq(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .filter {
   padding-top: 94px;

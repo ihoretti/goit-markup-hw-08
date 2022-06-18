@@ -37,6 +37,7 @@ a {
     display: block;
     width: 480px;
     padding-top: 60px;
+    padding-bottom: 30px;
   }
   @include mq(tabblet-only) {
     display: flex;

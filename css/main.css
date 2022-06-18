@@ -76,6 +76,7 @@ a {
 }
 
 .section {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,7 +92,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section {
-    display: flex;
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -126,8 +126,27 @@ a {
 }
 
 .container {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
   align-items: center;
+}
+
+.container-works {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .container-works {
+    display: none;
+  }
 }
 
 .header__container {

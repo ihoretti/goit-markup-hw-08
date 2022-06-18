@@ -3,7 +3,7 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: auto 0px;
   align-items: center;
 }
 .container-works {
@@ -11,7 +11,7 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: auto 0px;
   align-items: center;
 
   @include mq(not-desktop) {

@@ -1,6 +1,22 @@
 .container {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
   align-items: center;
+}
+.container-works {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  align-items: center;
+
+  @include mq(not-desktop) {
+    display: none;
+  }
 }
 .header__container {
   display: flex;

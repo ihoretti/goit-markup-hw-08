@@ -137,16 +137,7 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto 0px;
-  align-items: center;
-}
-
-.container-works {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto 0px;
+  margin: auto;
   align-items: center;
 }
 
@@ -156,38 +147,12 @@ a {
   }
 }
 
-.header__container {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-  align-items: center;
-}
-
 .container-btn {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   justify-content: center;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-footer,
-.test-container {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .list {
-  display: block;
   padding: 0px;
 }
 
@@ -199,7 +164,7 @@ a {
 .header {
   display: flex;
   margin-left: auto;
-  margin-right: 0px;
+  margin-right: auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -780,8 +745,8 @@ a {
   display: inline;
   text-align: center;
   min-width: 145px;
-  padding-bottom: 0px;
   margin-left: 70px;
+  padding-bottom: 0px;
 }
 
 .join__title {

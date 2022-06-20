@@ -60,8 +60,6 @@ a {
 
 @media screen and (max-width: 767.98px) {
   .section-features {
-    display: block;
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 30px;
   }
@@ -69,37 +67,23 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section-features {
-    display: flex;
-    width: 1200px;
     padding-top: 94px;
   }
 }
 
 .section {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .section {
-    display: block;
-    width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .section__title {
-  display: block;
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 30px;
@@ -133,12 +117,22 @@ a {
 }
 
 .container {
-  display: flex;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -164,11 +158,27 @@ a {
 }
 
 .header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__conteiner {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 767.98px) {
+  .header__conteiner {
+    justify-content: space-between;
+  }
 }
 
 /* Логотип */

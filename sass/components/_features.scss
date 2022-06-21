@@ -14,8 +14,10 @@
     margin-bottom: 30px;
   }
   @include mq(tablett-only) {
-    flex-basis: calc(100% / 2-30px);
+    display: flex;
     width: 354px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-bottom: 30px;
   }
   @include mq(desktop) {

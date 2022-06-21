@@ -13,7 +13,7 @@
     margin-left: 15px;
     margin-bottom: 30px;
   }
-  @include mq(tablett) {
+  @include mq(tablett-only) {
     flex-basis: calc(100% / 2-30px);
     width: 354px;
     margin-bottom: 30px;
@@ -28,7 +28,6 @@
     }
   }
 }
-
 
 .features__title {
   font-family: "Roboto", sans-serif;

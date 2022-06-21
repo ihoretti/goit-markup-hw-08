@@ -117,6 +117,7 @@ a {
 }
 
 .container {
+  display: flexbox;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -133,6 +134,11 @@ a {
   .container {
     width: 1200px;
   }
+}
+
+.header__container,
+.footer__container {
+  display: flex;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -158,27 +164,11 @@ a {
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.header__conteiner {
   display: flex;
+  margin-left: auto;
+  margin-right: 0px;
   align-items: center;
-}
-
-@media screen and (max-width: 767.98px) {
-  .header__conteiner {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 /* Логотип */
@@ -211,7 +201,7 @@ a {
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .site-nav__link {

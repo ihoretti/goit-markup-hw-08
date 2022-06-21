@@ -152,6 +152,12 @@ a {
   margin-bottom: 50px;
 }
 
+.features,
+.works,
+.team {
+  display: flex;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -651,7 +657,6 @@ a {
 }
 
 .clients__item {
-  display: flex;
   margin-right: 30px;
 }
 

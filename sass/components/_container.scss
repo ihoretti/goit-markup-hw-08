@@ -28,6 +28,11 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+.features,
+.works,
+.team {
+  display: flex;
+}
 .list {
   list-style: none;
   margin: 0px;

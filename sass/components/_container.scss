@@ -32,6 +32,9 @@
 .works,
 .team {
   display: flex;
+  @include mq(mobile-only) {
+    display: block;
+  }
 }
 .list {
   list-style: none;

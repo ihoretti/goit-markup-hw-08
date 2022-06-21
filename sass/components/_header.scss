@@ -1,23 +1,9 @@
 .header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  @include mq(tabblet) {
-    padding-top: 21px;
-    padding-bottom: 20px;
-  }
-  @include mq(desktop) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  &__conteiner {
-    display: flex;
-    align-items: center;
-    @include mq(mobile-only) {
-      justify-content: space-between;
-    }
-  }
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: space-between;
 }
 /* Логотип */
 .logo {
@@ -45,7 +31,7 @@
   list-style-type: none;
 }
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 .site-nav__link {
   font-family: "Roboto", sans-serif;

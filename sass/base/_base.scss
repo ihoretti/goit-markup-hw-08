@@ -34,11 +34,10 @@ a {
   margin-right: auto;
 
   @include mq(mobile-only) {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding: 60px 0;
   }
   @include mq(tabblet-only) {
-    padding-top: 60px;
+    padding: 60px 0;
   }
   @include mq(desktop) {
     padding-top: 94px;

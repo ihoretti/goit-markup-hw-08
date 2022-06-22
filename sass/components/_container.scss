@@ -1,17 +1,19 @@
 .container {
-  display: flexbox;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
   align-items: center;
 
   @include mq(mobile) {
+    display: block;
     width: 480px;
   }
   @include mq(tabblet) {
+    display: flex;
     width: 768px;
   }
   @include mq(desktop) {
+    display: flexbox;
     width: 1200px;
   }
 }

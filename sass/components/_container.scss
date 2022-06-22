@@ -1,4 +1,5 @@
 .container {
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -8,12 +9,10 @@
     display: block;
     width: 480px;
   }
-  @include mq(tabblet) {
-    display: flex;
+  @include mq(tablet) {
     width: 768px;
   }
   @include mq(desktop) {
-    display: flexbox;
     width: 1200px;
   }
 }
@@ -36,6 +35,11 @@
   display: flex;
   @include mq(mobile-only) {
     display: block;
+  }
+}
+.features {
+  @include mq(tablet) {
+    flex-wrap: wrap;
   }
 }
 .list {

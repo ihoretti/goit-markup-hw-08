@@ -5,7 +5,19 @@
   margin: 0px;
 }
 .clients__item {
-  margin-right: 30px;
+  @include mq(mobile) {
+    flex-basis: calc((100% - 2) * 30 / 2);
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  @include mq(tablet-only) {
+    flex-basis: calc((100% - 3) * 30 / 3);
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  @include mq(desktop) {
+    margin-right: 30px;
+  }
   &:last-child {
     margin-right: 0px;
   }
@@ -25,6 +37,14 @@
   &:focus {
     color: #2196f3;
     border-color: #2196f3;
+  }
+  @include mq(mobile) {
+    width: 210px;
+    flex-wrap: wrap;
+  }
+  @include mq(tablet) {
+    width: 226px;
+    flex-wrap: wrap;
   }
 }
 .clients__icon {

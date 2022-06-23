@@ -82,6 +82,11 @@
   }
 }
 .features__item {
+  @include mq(tablet-only) {
+    flex-basis: calc((100% - 2) * 30 / 2);
+    margin: 15px;
+    flex-wrap: wrap;
+  }
   @include mq(desktop) {
     margin-right: 30px;
   }

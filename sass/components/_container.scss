@@ -47,14 +47,6 @@
     flex-wrap: wrap;
   }
 }
-.works {
-  @include mq(mobile) {
-    flex-wrap: wrap;
-  }
-}
-@include mq(tablet) {
-  flex-wrap: wrap;
-}
 
 .list {
   list-style: none;

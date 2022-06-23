@@ -5,7 +5,7 @@
 .works__item {
   width: 370px;
   margin-right: 30px;
-}
-.works__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }

@@ -158,29 +158,21 @@ a {
   margin-bottom: 50px;
 }
 
-.features,
-.works,
-.team {
-  display: flex;
-}
-
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .features,
   .works,
   .team {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .features,
+  .works,
   .team {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -578,38 +570,61 @@ a {
 
 .team__item {
   list-style-type: none;
-  width: 270px;
-  margin-right: 30px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-}
-
-.team__item:last-child {
-  margin-right: 0px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .team__item {
-    width: 450px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__item {
     width: 354px;
-    flex-basis: calc((100% - 2) * 30 / 2);
-    margin: 15px;
-    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
-.team__box {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__box {
+    padding: 30px 0;
+  }
 }
 
 .team__title {

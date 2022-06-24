@@ -32,22 +32,15 @@
 .features,
 .works,
 .team {
-  display: flex;
-  @include mq(mobile-only) {
-    display: block;
-  }
-}
-.features {
   @include mq(tablet) {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  @include mq(desktop) {
+    flex-wrap: nowrap;
   }
 }
-.team {
-  @include mq(tablet) {
-    flex-wrap: wrap;
-  }
-}
-
 .list {
   list-style: none;
   margin: 0px;

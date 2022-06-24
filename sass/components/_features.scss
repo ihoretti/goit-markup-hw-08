@@ -9,14 +9,11 @@
 
   @include mq(mobile-only) {
     width: 450px;
-    margin-right: 15px;
-    margin-left: 15px;
     margin-bottom: 30px;
   }
   @include mq(tablet-only) {
     width: 354px;
     margin-right: 0px;
-    flex-wrap: wrap;
   }
   @include mq(desktop) {
     width: 270px;
@@ -44,10 +41,6 @@
     margin-left: 105px;
     margin-right: 105px;
   }
-  @include mq(tablet-only) {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
 }
 
 .features__descr {
@@ -62,17 +55,13 @@
   @include mq(mobile-only) {
     max-width: 450px;
     max-height: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+
     margin-bottom: 30px;
   }
 
   @include mq(tablet-only) {
     max-width: 354px;
     max-height: 75px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
   }
   @include mq(desktop) {
     max-width: 270px;
@@ -82,16 +71,18 @@
   }
 }
 .features__item {
-  @include mq(tablet-only) {
-    width: 354px;
-    flex-basis: calc((100% - 2) * 30 / 2);
-    margin: 15px;
-    flex-wrap: wrap;
+  @include mq(tablet) {
+    flex-basis: calc(100% / 2 - 30px);
   }
   @include mq(desktop) {
     margin-right: 30px;
   }
   &:last-child {
+    margin-right: 0px;
+  }
+}
+.features__item :nth-child(2n) {
+  @include mq(tablet-only) {
     margin-right: 0px;
   }
 }

@@ -35,7 +35,6 @@
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
   @include mq(desktop) {
     flex-wrap: nowrap;

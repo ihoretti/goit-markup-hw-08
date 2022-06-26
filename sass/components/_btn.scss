@@ -81,6 +81,12 @@
     border-radius: 4px;
   }
 }
+.item-btn:nth-child(-n + 3) {
+  margin-bottom: 15px;
+  @include mq(tablet) {
+    margin-bottom: 0px;
+  }
+}
 /* Закрытие модального окна */
 
 .modal-btn {

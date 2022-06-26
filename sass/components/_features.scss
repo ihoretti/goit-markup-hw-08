@@ -81,6 +81,11 @@
       margin-right: 0px;
     }
   }
+  &:nth-child(n + 3) {
+    @include mq(tablet-only) {
+      margin-bottom: 0px;
+    }
+  }
   @include mq(desktop) {
     margin-right: 30px;
   }

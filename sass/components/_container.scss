@@ -27,7 +27,16 @@
 }
 .container-btn {
   justify-content: center;
-  margin-bottom: 50px;
+
+  @include mq(mobile) {
+    margin-bottom: 40px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 .features,
 .works,
@@ -47,5 +56,11 @@
 }
 .btn-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  @include mq(tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }

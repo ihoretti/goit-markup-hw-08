@@ -45,7 +45,12 @@
   fill: #ffffff;
   margin-left: 10px;
 }
-
+.sub-btn {
+  @include mq(mobile-only) {
+    display: block;
+    justify-content: center;
+  }
+}
 /* Кнопки портфолио */
 .btn {
   font-family: "Roboto", sans-serif;

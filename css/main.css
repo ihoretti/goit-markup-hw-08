@@ -142,11 +142,6 @@ a {
   }
 }
 
-.header__container,
-.footer__container {
-  display: flex;
-}
-
 @media screen and (min-width: 480px) {
   .header__container,
   .footer__container {
@@ -165,6 +160,7 @@ a {
 @media screen and (min-width: 1200px) {
   .header__container,
   .footer__container {
+    display: flex;
     width: 1200px;
   }
 }
@@ -418,6 +414,13 @@ a {
 .sub-btn__sub-icon {
   fill: #ffffff;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .sub-btn {
+    display: block;
+    justify-content: center;
+  }
 }
 
 /* Кнопки портфолио */
@@ -896,6 +899,12 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer__link {
+    text-align: center;
+  }
+}
+
 .footer--span-logo {
   color: #2196f3;
 }
@@ -915,6 +924,12 @@ a {
   color: var(--primary-white-txt);
 }
 
+@media screen and (max-width: 767.98px) {
+  .address__link {
+    text-align: center;
+  }
+}
+
 .address__email {
   display: block;
   min-width: 231px;
@@ -926,6 +941,12 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767.98px) {
+  .address__email {
+    text-align: center;
+  }
 }
 
 .address__tel {
@@ -940,6 +961,12 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 767.98px) {
+  .address__tel {
+    text-align: center;
+  }
+}
+
 /* Социальные сети футера */
 .join {
   display: inline;
@@ -947,6 +974,12 @@ a {
   min-width: 145px;
   margin-left: 70px;
   padding-bottom: 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .join {
+    margin-left: 0px;
+  }
 }
 
 .join__title {
@@ -961,9 +994,22 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .join__title {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
 .list-social {
   display: flex;
   list-style-type: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list-social {
+    justify-content: center;
+  }
 }
 
 .join__social--item {
@@ -1004,6 +1050,12 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .subscribe-form {
+    display: block;
+  }
+}
+
 .sub-label {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1015,6 +1067,12 @@ a {
   margin-right: 12px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .sub-label {
+    margin-right: 0px;
+  }
+}
+
 .sub-label__input {
   width: 358px;
   height: 50px;
@@ -1023,6 +1081,13 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767.98px) {
+  .sub-label__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio {

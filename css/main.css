@@ -147,6 +147,28 @@ a {
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .header__container,
+  .footer__container {
+    display: block;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container,
+  .footer__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container,
+  .footer__container {
+    width: 1200px;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   .container-works {
     display: none;

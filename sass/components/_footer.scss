@@ -3,7 +3,19 @@
   padding-top: 60px;
   background-color: var(--primary-dark-bg);
 }
-
+.tablet-flex {
+  @include mq(mobile-only) {
+    display: block;
+  }
+  @include mq(tablet-only) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @include mq(desktop) {
+    display: flex;
+  }
+}
 .footer__link {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -15,7 +27,7 @@
   display: block;
   margin-bottom: 20px;
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
     text-align: center;
   }
 }
@@ -53,7 +65,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
     text-align: center;
   }
 }
@@ -69,7 +81,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
     text-align: center;
   }
 }
@@ -82,6 +94,10 @@
   padding-bottom: 0px;
 
   @include mq(mobile-only) {
+    margin-left: 0px;
+  }
+  @include mq(tablet-only) {
+    justify-content: center;
     margin-left: 0px;
   }
 }
@@ -100,6 +116,9 @@
   @include mq(mobile-only) {
     text-align: center;
     margin-top: 60px;
+  }
+  @include mq(tablet-only) {
+    text-align: center;
   }
 }
 .list-social {
@@ -145,7 +164,7 @@
   display: flex;
   align-items: center;
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
     display: block;
   }
 }
@@ -159,7 +178,8 @@
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
+    justify-content: center;
     margin-right: 0px;
   }
 }
@@ -172,7 +192,7 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
 
-  @include mq(mobile-only) {
+  @include mq(not-desktop) {
     width: 450px;
     margin-bottom: 20px;
   }

@@ -416,7 +416,7 @@ a {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .sub-btn {
     display: block;
     justify-content: center;
@@ -888,6 +888,26 @@ a {
   background-color: var(--primary-dark-bg);
 }
 
+@media screen and (max-width: 767.98px) {
+  .tablet-flex {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .tablet-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-flex {
+    display: flex;
+  }
+}
+
 .footer__link {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -899,7 +919,7 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer__link {
     text-align: center;
   }
@@ -943,7 +963,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .address__email {
     text-align: center;
   }
@@ -961,7 +981,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .address__tel {
     text-align: center;
   }
@@ -982,6 +1002,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .join {
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+
 .join__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -998,6 +1025,12 @@ a {
   .join__title {
     text-align: center;
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .join__title {
+    text-align: center;
   }
 }
 
@@ -1050,7 +1083,7 @@ a {
   align-items: center;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe-form {
     display: block;
   }
@@ -1067,8 +1100,9 @@ a {
   margin-right: 12px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .sub-label {
+    justify-content: center;
     margin-right: 0px;
   }
 }
@@ -1083,7 +1117,7 @@ a {
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .sub-label__input {
     width: 450px;
     margin-bottom: 20px;

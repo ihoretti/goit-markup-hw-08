@@ -10,10 +10,12 @@
   @include mq(tablet-only) {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 60px;
   }
   @include mq(desktop) {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer__link {
@@ -162,7 +164,6 @@
 }
 .subscribe-form {
   display: flex;
-  align-items: center;
 
   @include mq(not-desktop) {
     display: block;

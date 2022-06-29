@@ -17,6 +17,10 @@
 .header__logo {
   align-items: center;
   margin-right: 93px;
+
+  @include mq(mobile-only) {
+    margin-top: 16px;
+  }
 }
 .header__logo--span-logo {
   color: #2196f3;
@@ -29,6 +33,10 @@
 
   margin: auto;
   list-style-type: none;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -70,9 +78,19 @@
   display: flex;
   margin-left: auto;
   list-style-type: none;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+  @include mq(tablet-only) {
+    display: block;
+  }
 }
 .contacts__item {
   margin-left: 30px;
+  @include mq(tablet-only) {
+    margin-left: 0px;
+  }
 }
 .contacts__link {
   display: flex;

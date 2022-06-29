@@ -23,12 +23,16 @@
     width: 480px;
   }
   @include mq(tablet) {
+    display: flex;
     width: 768px;
   }
   @include mq(desktop) {
     display: flex;
     width: 1200px;
   }
+}
+.header__container {
+  height: 60px;
 }
 .footer__container {
   @include mq(desktop) {

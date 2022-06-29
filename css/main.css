@@ -165,6 +165,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   .container-works {
     display: none;
@@ -898,6 +904,7 @@ a {
   .tablet-flex {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 60px;
   }
 }
@@ -905,6 +912,7 @@ a {
 @media screen and (min-width: 1200px) {
   .tablet-flex {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1080,7 +1088,6 @@ a {
 
 .subscribe-form {
   display: flex;
-  align-items: center;
 }
 
 @media screen and (max-width: 1199.98px) {

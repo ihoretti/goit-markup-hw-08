@@ -153,6 +153,7 @@ a {
 @media screen and (min-width: 768px) {
   .header__container,
   .footer__container {
+    display: flex;
     width: 768px;
   }
 }
@@ -163,6 +164,10 @@ a {
     display: flex;
     width: 1200px;
   }
+}
+
+.header__container {
+  height: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -259,6 +264,12 @@ a {
   margin-right: 93px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .header__logo {
+    margin-top: 16px;
+  }
+}
+
 .header__logo--span-logo {
   color: #2196f3;
 }
@@ -270,6 +281,12 @@ a {
   padding: 32px 0;
   margin: auto;
   list-style-type: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -319,8 +336,26 @@ a {
   list-style-type: none;
 }
 
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts {
+    display: block;
+  }
+}
+
 .contacts__item {
   margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__item {
+    margin-left: 0px;
+  }
 }
 
 .contacts__link {
@@ -1136,6 +1171,12 @@ a {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio {
+    margin: -15px;
+  }
+}
+
 .portfolio__item {
   border: 1px solid #eeeeee;
 }
@@ -1155,7 +1196,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__item {
     width: 354px;
-    flex-basis: calc((100% - 4) * 15 / 2);
+    flex-basis: calc((100% - 4) * 15px / 2);
     margin: 15px;
   }
 }

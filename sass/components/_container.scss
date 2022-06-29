@@ -30,6 +30,11 @@
     width: 1200px;
   }
 }
+.footer__container {
+  @include mq(desktop) {
+    align-items: baseline;
+  }
+}
 
 .container-works {
   @include mq(not-desktop) {

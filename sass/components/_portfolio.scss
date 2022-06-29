@@ -1,6 +1,9 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  @include mq(tablet-only) {
+    margin: -15px;
+  }
 }
 .portfolio__item {
   border: 1px solid #eeeeee;
@@ -18,7 +21,7 @@
   }
   @include mq(tablet-only) {
     width: 354px;
-    flex-basis: calc((100% - 4) * 15 / 2);
+    flex-basis: calc((100% - 4) * 15px / 2);
     margin: 15px;
   }
 

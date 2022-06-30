@@ -32,9 +32,15 @@
   }
 }
 .header__container {
-  height: 60px;
+  @include mq(mobile-only) {
+    height: 60px;
+    padding-top: 16px;
+  }
 }
 .footer__container {
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+  }
   @include mq(desktop) {
     align-items: baseline;
   }

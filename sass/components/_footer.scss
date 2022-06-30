@@ -12,6 +12,8 @@
     justify-content: center;
     align-items: baseline;
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @include mq(desktop) {
     display: flex;
@@ -162,7 +164,8 @@
 .subscribe {
   margin-left: auto;
   @include mq(tablet-only) {
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
   }
 }
 .subscribe-form {

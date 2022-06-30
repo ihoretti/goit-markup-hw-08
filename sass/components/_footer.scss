@@ -161,6 +161,9 @@
 
 .subscribe {
   margin-left: auto;
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+  }
 }
 .subscribe-form {
   display: flex;

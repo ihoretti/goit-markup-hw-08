@@ -33,8 +33,15 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" lang="en" href="./index.html"
-          ><span class="header__logo--span-logo">Web</span>Studio</a
-        >
+          ><span class="header__logo--span-logo">Web</span>Studio</a>
+           <button class="menu-btn" type="button" aria-label="Open menu"
+        data-menu-button
+        aria-expanded="false">
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-menu" href="./foto\icons\symbol-defs.svg#icon-menu"></use>
+            <use class="menu-btn__icon-close" href="./foto\icons\symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -527,7 +534,47 @@
               </label>
               </div>
               <button type="submit" class="btn-submit">Отправить</button>
-        </form >
+        </form>
+      </div>
+    </div>
+
+      <div class="mobile-menu" data-menu>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="./index.html">Студія</a></li>
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="URL">Контакти</a></li>
+        </ul>
+      </nav>
+    <div class="mobile-group">
+      <ul class="mobile-contacts list">
+      <li class="mobile-contacts__item item">
+        <a href="tel:+380961111111" class="mobile-contacts__tel link">+38 096 111 11 11</a></li>
+      <li class="mobile-contacts__item item">
+        <a href="mailto:info@devstudio.com" class="mobile-contacts__mail link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-socials list">
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Twitter</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Instagram</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Facebook</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+    </div>
+
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
   </body>
 </html>

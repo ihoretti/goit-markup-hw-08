@@ -639,6 +639,57 @@ a {
   fill: currentColor;
 }
 
+/* Мобильное меню шапки */
+.menu-btn {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  border: transparent;
+}
+
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn__icon-menu {
+  opacity: 1;
+  fill: #212121;
+}
+
+.menu-btn__icon-close {
+  opacity: 0;
+}
+
+.menu-btn__icon__icon-menu, .menu-btn__icon__icon-close {
+  fill: #212121;
+}
+
+.menu-btn__icon:hover .menu-btn__icon-menu,
+.menu-btn__icon:hover .menu-btn__icon-close {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn.is-active .menu-btn__icon-menu {
+  opacity: 0;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
+  opacity: 1;
+}
+
 .features__box {
   display: flex;
   height: 120px;

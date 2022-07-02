@@ -111,3 +111,45 @@
   border-color: #2196f3;
   fill: currentColor;
 }
+/* Мобильное меню шапки */
+.menu-btn {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 11px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  border: transparent;
+  &__icon {
+    width: 40px;
+    height: 40px;
+    &-menu {
+      opacity: 1;
+      fill: #212121;
+    }
+    &-close {
+      opacity: 0;
+    }
+    &__icon-menu,
+    &__icon-close {
+      fill: #212121;
+    }
+    &:hover .menu-btn__icon-menu,
+    &:hover .menu-btn__icon-close {
+      fill: #2196f3;
+    }
+  }
+  @include mq(tablet) {
+    display: none;
+  }
+  &.is-active .menu-btn__icon-menu {
+    opacity: 0;
+  }
+  &.is-active .menu-btn__icon-close {
+    opacity: 1;
+  }
+}

@@ -687,7 +687,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  display: none;
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .features__box {

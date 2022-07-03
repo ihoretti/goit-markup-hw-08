@@ -34,10 +34,15 @@
       <div class="container header__container">
         <a class="logo header__logo" lang="en" href="./index.html"
           ><span class="header__logo--span-logo">Web</span>Studio</a>
-           <button class="menu-btn" type="button" aria-label="Open menu"
+           <button type="button" class="menu-btn is-open"
+            aria-expanded="false" 
+            data-menu-button>  
+          <svg class="menu-btn__icon" 
+          width="40" 
+          height="40"
+          aria-label="Open menu"
         data-menu-button
         aria-expanded="false">
-          <svg class="menu-btn__icon" width="18" height="18">
           <use class="menu-btn__icon-menu" href="./foto\icons\icons.svg#icon-menu"></use>
           <use class="menu-btn__icon-close" href="./foto\icons\icons.svg#icon-close"></use>
           </svg>

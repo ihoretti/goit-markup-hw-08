@@ -33,8 +33,9 @@
 }
 .header__container {
   @include mq(mobile-only) {
-    height: 60px;
     padding-top: 16px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .footer__container {

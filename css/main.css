@@ -501,14 +501,13 @@ img {
 }
 
 .hero {
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--primary-dark-bg);
-  background-image: url(../foto/overlay.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/overlay.jpg);
+  background-image: url(../foto/hero/header_dt.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/hero/header_dt@2x.jpg);
 }
 
 .hero__title {

@@ -129,12 +129,36 @@
           <ul class="list portfolio">
             <li class="portfolio__item">
               <div class="overlay">
-                <img
-                  class="img"
-                  src="./foto/techno.jpg"
-                  alt="Лица на ноуте"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./foto/portfolio/techno dt.jpg  1x,
+                      ./foto/portfolio/techn dt@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./foto/portfolio/techno tb.jpg    1x,
+                      ./foto/portfolio/techno tb@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="./foto/portfolio/techno mb@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="img"
+                    src="./foto/portfolio/techno mb.jpg"
+                    alt="Лица на ноуте"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <p class="overlay-txt">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
                   eaque vero placeat a corporis, quod odio distinctio repellat

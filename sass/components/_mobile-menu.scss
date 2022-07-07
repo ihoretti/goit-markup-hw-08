@@ -47,7 +47,7 @@
   margin-bottom: 32px;
   font-size: 26px;
   letter-spacing: 0.02em;
-  color: var(--accent);
+  color: #2196f3;
   @include mq(mobile) {
     font-size: 34px;
   }
@@ -55,7 +55,7 @@
 .mobile-contacts__mail {
   font-size: 24px;
   line-height: 28px;
-  color: var(--second-color);
+  color: #757575;
 }
 
 .mobile-socials {
@@ -73,7 +73,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 14px;
-  color: var(--accent);
+  color: #2196f3;
   @include mq(mobile) {
     font-size: 18px;
   }

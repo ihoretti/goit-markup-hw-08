@@ -8,20 +8,36 @@
   text-align: center;
   background-color: var(--primary-dark-bg);
   background-size: cover;
-  background-image: url(../foto/header_mb.jpg),
-    linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../foto/header_mb.jpg);
   @include mq(retina) {
-    background-image: url(../foto/header_mb@2x.jpg),
-      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../foto/header_mb@2x.jpg);
   }
 
   @include mq(tablet) {
     max-width: 768px;
-    background-image: url(../foto/header_tb.jpg),
-      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../foto/header_tb.jpg);
     @include mq(retina) {
-      background-image: url(../foto/header_tb@2x.jpg),
-        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../foto/header_tb@2x.jpg);
     }
   }
   @include mq(desktop) {
@@ -29,11 +45,20 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../foto/header_dt.jpg),
-      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../foto/header_dt.jpg);
+
     @include mq(retina) {
-      background-image: url(../foto/header_dt@2x.jpg),
-        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../foto/header_dt@2x.jpg);
     }
   }
 }

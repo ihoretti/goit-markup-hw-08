@@ -65,16 +65,24 @@
 .hero__title {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
 
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  @include mq(tablet) {
+    width: 360px;
+    font-size: 26px;
+  }
+  @include mq(desktop) {
+    width: 696px;
+    font-size: 44px;
+  }
 }

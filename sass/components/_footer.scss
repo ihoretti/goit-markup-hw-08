@@ -9,11 +9,11 @@
   }
   @include mq(tablet-only) {
     display: flex;
-    justify-content: center;
+
     align-items: baseline;
     margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 60px;
+    margin-right: 0px;
   }
   @include mq(desktop) {
     display: flex;
@@ -92,9 +92,9 @@
 /* Социальные сети футера */
 .join {
   display: inline;
-  text-align: center;
-  min-width: 145px;
   margin-left: 70px;
+  min-width: 145px;
+
   padding-bottom: 0px;
 
   @include mq(mobile-only) {
@@ -102,7 +102,7 @@
   }
   @include mq(tablet-only) {
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 165px;
   }
 }
 .join__title {
@@ -128,9 +128,16 @@
 .list-social {
   display: flex;
   list-style-type: none;
+  justify-content: baseline;
 
   @include mq(mobile-only) {
     justify-content: center;
+  }
+  @include mq(tablet) {
+    padding-left: 0px;
+  }
+  @include mq(desktop) {
+    padding-left: 0px;
   }
 }
 .join__social--item {

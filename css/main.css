@@ -552,17 +552,31 @@ img {
 .hero__title {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .hero__btn {

@@ -46,6 +46,7 @@ img {
   }
   @include mq(desktop) {
     padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 .section {

@@ -1161,11 +1161,10 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .tablet-flex {
     display: flex;
-    justify-content: center;
     align-items: baseline;
     margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 60px;
+    margin-right: 0px;
   }
 }
 
@@ -1258,9 +1257,8 @@ img {
 /* Социальные сети футера */
 .join {
   display: inline;
-  text-align: center;
-  min-width: 145px;
   margin-left: 70px;
+  min-width: 145px;
   padding-bottom: 0px;
 }
 
@@ -1273,7 +1271,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .join {
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 165px;
   }
 }
 
@@ -1305,11 +1303,24 @@ img {
 .list-social {
   display: flex;
   list-style-type: none;
+  justify-content: baseline;
 }
 
 @media screen and (max-width: 767.98px) {
   .list-social {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-social {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-social {
+    padding-left: 0px;
   }
 }
 

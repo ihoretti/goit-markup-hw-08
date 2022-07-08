@@ -52,7 +52,7 @@
 
 .container-works {
   @include mq(not-desktop) {
-    display: none;
+  display: none;
   }
 }
 .container-btn {

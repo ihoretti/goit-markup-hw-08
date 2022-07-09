@@ -131,7 +131,6 @@ img {
 
 .container {
   width: 100%;
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -182,6 +181,8 @@ img {
 }
 
 .header__container {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
@@ -190,7 +191,6 @@ img {
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -302,7 +302,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .header__logo {
-    margin-right: 284px;
+    margin-right: auto;
   }
 }
 
@@ -569,7 +569,6 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
-  width: 360px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -772,7 +771,6 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .features__box {
-    width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -809,8 +807,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .features__title {
     text-align: center;
-    margin-left: 105px;
-    margin-right: 105px;
+    width: 100%;
   }
 }
 
@@ -900,7 +897,6 @@ img {
 
 .team__item {
   list-style-type: none;
-  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
@@ -1390,7 +1386,6 @@ img {
 }
 
 .sub-label__input {
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   background-color: #2f303a;
@@ -1399,10 +1394,23 @@ img {
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
+  .sub-label__input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .sub-label__input {
     width: 450px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-label__input {
+    width: 358px;
   }
 }
 
@@ -1512,7 +1520,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 24px;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--animation);
   cursor: pointer;
   position: absolute;
@@ -1548,7 +1556,6 @@ img {
 
 .modal-wrapper {
   position: absolute;
-  width: 530px;
   height: 580px;
   left: 50%;
   top: 50%;
@@ -1556,6 +1563,12 @@ img {
   padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 530px;
+  }
 }
 
 .modal-title {
@@ -1589,13 +1602,18 @@ img {
 .form-input {
   display: block;
   margin: auto;
-  width: 448px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   transition: background-color var(--animation);
+}
+
+@media screen and (min-width: 480px) {
+  .form-input {
+    width: 448px;
+  }
 }
 
 .form-input:hover, .form-input:focus {
@@ -1635,7 +1653,6 @@ img {
   display: block;
   resize: none;
   box-sizing: border-box;
-  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1643,6 +1660,12 @@ img {
   padding: 12px 16px;
   outline: none;
   transition: background-color var(--animation);
+}
+
+@media screen and (min-width: 480px) {
+  .textarea {
+    width: 448px;
+  }
 }
 
 .textarea:hover, .textarea:focus {

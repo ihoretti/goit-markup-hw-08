@@ -24,6 +24,7 @@
 }
 .btn-submit,
 .sub-btn {
+  display: flex;
   box-sizing: border-box;
   min-width: 200px;
   padding: 10px 32px;
@@ -49,13 +50,7 @@
   fill: #ffffff;
   margin-left: 10px;
 }
-.sub-btn {
-  display: flex;
-  @include mq(not-desktop) {
-    display: block;
-    justify-content: center;
-  }
-}
+
 /* Кнопки портфолио */
 .btn {
   font-family: "Roboto", sans-serif;

@@ -61,7 +61,7 @@
   @include mq(mobile) {
     margin-bottom: 40px;
   }
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     margin-bottom: 30px;
   }
   @include mq(desktop) {

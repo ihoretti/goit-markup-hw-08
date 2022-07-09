@@ -615,6 +615,7 @@ img {
 
 .btn-submit,
 .sub-btn {
+  display: flex;
   box-sizing: border-box;
   min-width: 200px;
   padding: 10px 32px;
@@ -639,17 +640,6 @@ img {
 .sub-btn__sub-icon {
   fill: #ffffff;
   margin-left: 10px;
-}
-
-.sub-btn {
-  display: flex;
-}
-
-@media screen and (max-width: 1199.98px) {
-  .sub-btn {
-    display: block;
-    justify-content: center;
-  }
 }
 
 /* Кнопки портфолио */

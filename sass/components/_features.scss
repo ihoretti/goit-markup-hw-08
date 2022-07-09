@@ -8,7 +8,6 @@
   fill: #212121;
 
   @include mq(mobile-only) {
-    width: 450px;
     margin-bottom: 30px;
   }
   @include mq(tablet-only) {
@@ -38,8 +37,7 @@
 
   @include mq(mobile-only) {
     text-align: center;
-    margin-left: 105px;
-    margin-right: 105px;
+    width: 100%;
   }
 }
 

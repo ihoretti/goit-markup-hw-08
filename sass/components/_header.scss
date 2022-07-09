@@ -23,7 +23,7 @@
   margin-right: 93px;
 
   @include mq(mobile-only) {
-    margin-right: 284px;
+    margin-right: auto;
   }
 }
 .header__logo--span-logo {

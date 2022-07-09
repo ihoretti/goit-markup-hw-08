@@ -1312,23 +1312,12 @@ img {
   display: flex;
   list-style-type: none;
   justify-content: baseline;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 767.98px) {
   .list-social {
     justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .list-social {
-    padding-left: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .list-social {
-    padding-left: 0px;
   }
 }
 

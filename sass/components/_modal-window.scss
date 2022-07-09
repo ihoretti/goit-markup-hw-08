@@ -18,8 +18,6 @@
 }
 .modal-wrapper {
   position: absolute;
-
-  width: 530px;
   height: 580px;
   left: 50%;
   top: 50%;
@@ -27,6 +25,9 @@
   padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
+  @include mq(mobile) {
+    width: 530px;
+  }
 }
 .modal-title {
   font-family: "Roboto", sans-serif;
@@ -58,7 +59,6 @@
 .form-input {
   display: block;
   margin: auto;
-  width: 448px;
   height: 40px;
   padding-left: 42px;
 
@@ -66,6 +66,9 @@
   border-radius: 4px;
   outline: none;
   transition: background-color var(--animation);
+  @include mq(mobile) {
+    width: 448px;
+  }
 
   &:hover,
   &:focus {
@@ -102,7 +105,6 @@
   display: block;
   resize: none;
   box-sizing: border-box;
-  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -111,6 +113,9 @@
   outline: none;
 
   transition: background-color var(--animation);
+  @include mq(mobile) {
+    width: 448px;
+  }
 
   &:hover,
   &:focus {

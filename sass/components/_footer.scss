@@ -128,17 +128,12 @@
   display: flex;
   list-style-type: none;
   justify-content: baseline;
-
+  padding-left: 0px;
   @include mq(mobile-only) {
     justify-content: center;
   }
-  @include mq(tablet) {
-    padding-left: 0px;
-  }
-  @include mq(desktop) {
-    padding-left: 0px;
-  }
 }
+
 .join__social--item {
   margin-right: 10px;
 

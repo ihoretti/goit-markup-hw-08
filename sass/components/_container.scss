@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -33,12 +32,13 @@
   }
 }
 .header__container {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ececec;
   @include mq(mobile-only) {
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .footer__container {

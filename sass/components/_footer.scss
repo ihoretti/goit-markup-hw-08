@@ -171,7 +171,6 @@
 }
 .subscribe-form {
   display: flex;
-
   @include mq(not-desktop) {
     display: block;
   }

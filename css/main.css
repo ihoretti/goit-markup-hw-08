@@ -89,6 +89,13 @@ img {
   }
 }
 
+@media screen and (max-width: 1199.98px) {
+  .section-works {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
 .section__title {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -632,6 +639,10 @@ img {
 .sub-btn__sub-icon {
   fill: #ffffff;
   margin-left: 10px;
+}
+
+.sub-btn {
+  display: flex;
 }
 
 @media screen and (max-width: 1199.98px) {

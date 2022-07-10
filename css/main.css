@@ -1496,7 +1496,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-dark-txt);
-  min-width: 322px;
   right: 36px;
   padding-bottom: 4px;
   margin-bottom: auto;
@@ -1506,7 +1505,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .signa__title {
     padding-bottom: 0px;
-    width: 304px;
     flex-wrap: wrap;
   }
 }

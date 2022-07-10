@@ -18,6 +18,9 @@
     pointer-events: initial;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
 // .mobile-nav {
 //     margin-bottom: 302px;
 // }

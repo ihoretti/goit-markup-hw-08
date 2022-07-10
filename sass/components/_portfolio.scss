@@ -17,6 +17,9 @@
     margin-bottom: 30px;
   }
   @include mq(tablet-only) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
     width: 354px;
     flex-basis: calc((100% - 4) * 15px / 2);
     margin: 15px;
@@ -38,7 +41,13 @@
     }
   }
 }
-
+.portfolio__link {
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .signa {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -47,6 +56,9 @@
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
+  @include mq(tablet-only) {
+    flex-grow: 1;
+  }
 }
 .signa__title {
   font-family: "Roboto", sans-serif;
@@ -60,7 +72,11 @@
   padding-bottom: 4px;
   margin-bottom: auto;
   text-align: left;
+  @include mq(tablet-only) {
+    padding-bottom: 0px;
+  }
 }
+
 .signa__descr {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -68,7 +84,7 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-dark-txt);
-  min-width: 322px;
+
   right: 30px;
   padding-top: 0px;
 }

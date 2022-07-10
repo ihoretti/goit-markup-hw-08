@@ -1439,6 +1439,9 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
     width: 354px;
     flex-basis: calc((100% - 4) * 15px / 2);
     margin: 15px;
@@ -1465,6 +1468,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .signa {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1473,6 +1484,12 @@ img {
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .signa {
+    flex-grow: 1;
+  }
 }
 
 .signa__title {
@@ -1489,6 +1506,12 @@ img {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .signa__title {
+    padding-bottom: 0px;
+  }
+}
+
 .signa__descr {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1496,7 +1519,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-dark-txt);
-  min-width: 322px;
   right: 30px;
   padding-top: 0px;
 }
